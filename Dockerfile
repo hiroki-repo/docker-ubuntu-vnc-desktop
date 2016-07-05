@@ -34,6 +34,8 @@ ADD supervisord.conf /etc/supervisor/conf.d/
 ADD doro-lxde-wallpapers /usr/share/doro-lxde-wallpapers/
 
 EXPOSE 6080
+
 EXPOSE 19132/udp
+
 WORKDIR /root
 ENTRYPOINT ["/startup.sh"]
